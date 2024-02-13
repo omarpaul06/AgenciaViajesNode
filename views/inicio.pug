@@ -1,6 +1,19 @@
 extends ./layout/index
 
+block slider 
+    .slider 
+        h1 Rio de Janeiro 
+        em aventura
+
 block contenido
     main.container.mt-5 
-        .row    
-            h1 #{pagina}
+        h2.text-center.mb-5 Sobre Nosotros
+        .row.mb-5 
+            .col-md-6 
+                p Vivamus fermentum, justo in rutrum euismod, urna diam eleifend turpis, et suscipit tellus nulla a est. Mauris tincidunt dui justo, sed molestie purus porttitor eu. In fermentum urna sodales viverra ultricies. In viverra lacus sed volutpat tempor. Aliquam at pellentesque tortor. Pellentesque at ultrices nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean efficitur commodo orci cursus posuere. Nunc et est consectetur, lacinia nisi ut, fringilla elit.
+                p Sed molestie purus porttitor eu. In fermentum urna sodales viverra ultricies. In viverra lacus sed volutpat tempor. 
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", alt=" imagen nosotros", class="img-fluid")
+                
+
+        include ./layout/bloque_viajes
